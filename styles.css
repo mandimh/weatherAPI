@@ -10,6 +10,7 @@ body {
 
 button {
     padding: 1.1em;
+    border-radius: 1em;
 }
 
 #weather {

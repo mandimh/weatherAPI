@@ -70,9 +70,13 @@ function getWeather(data) {
             return resp.json()
         })
         .then(function (data) {
+            isCelcius = true;
+            disableButton();
+
             city.innerHTML = data.name;
             currentTemp = data.main.temp
             temp.innerHTML = currentTemp;
+
             sky = data.weather[0].main;
             sky = sky.toLowerCase();
             //console.log(sky);
@@ -81,9 +85,10 @@ function getWeather(data) {
             if (skyBackground) {
                 document.body.style.backgroundImage = 'url(' + skyBackground + ')';
             } else {
+                //if the description of the sky condition isn't in the background object..
                 document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1489517456831-3994100a43bd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a31684ae035e64a810b9ec10ff9f6b8a&auto=format&fit=crop&w=1189&q=80')";
             }
-            disableButton();
+
         })
         .catch(function (err) {
             // This is where you run code if the server returns any errors
