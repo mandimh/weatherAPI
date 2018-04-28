@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather API</title>
+</head>
+
+<body>
+    <div class="container">
+        <p><button id="getLocation">Get my location</button></p>
+        <div id="out"></div>
+        <button id="updateWeather">Get the weather</button>
+
+        <div id="weather">
+            <h2 id="city"></h2>
+            <p><span id="temp"></span> &deg;<span id="tempType"></span></p>
+            <button id="farenheit">Farenheit</button>
+            <button id="celcius">Celcius</button>
+        </div>
+    </div>
+
+    <!--  External JS  -->
+    <script src="app.js"></script>
+</body>
+
+</html>

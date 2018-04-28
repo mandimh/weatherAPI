@@ -1,0 +1,20 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1489517456831-3994100a43bd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a31684ae035e64a810b9ec10ff9f6b8a&auto=format&fit=crop&w=1189&q=80');
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    padding: 1.1em;
+}
+
+#weather {
+    padding: 2em 4em;
+    background-color: rgba(300, 300, 300, 0.5);
+    border-radius: 2em;
+    font-size: 2em;
+}
